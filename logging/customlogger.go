@@ -2,17 +2,26 @@ package logging
 
 import "fmt"
 
-// customLogger is an implementation of a logger
 type customLogger struct {
 }
 
-// NewCustomLogger is factory method for customLogger
-func NewCustomLogger() Logger {
+// CustomLogger is factory method for customLogger
+func CustomLogger() Logger {
 	return &customLogger{}
 }
 
 func init() {
-	New = NewCustomLogger
+	New = CustomLogger
+}
+
+// SetLevel will set the desired level
+func (c customLogger) SetLevel(level LogLevel) {
+	fmt.Println("Setting level to " + LogLevel.String(level))
+}
+
+// ActivateVerboseOutput defines if the output contains a full set of information or not
+func (c customLogger) ActivateVerboseOutput(verboseFlag bool) {
+	fmt.Println("Activate the right verbose mode")
 }
 
 // Trace prints out more Debug level messages if Verbose activated
