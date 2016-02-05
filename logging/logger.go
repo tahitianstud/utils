@@ -9,3 +9,8 @@ type Logger interface {
 	Error(message string)
 	Fatal(message string)
 }
+
+type loggerFactory func() Logger
+
+// New permits the instantiation of a new Logger
+var New loggerFactory
