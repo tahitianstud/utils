@@ -1,0 +1,433 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"debug",
+				"DebugMode	 ƒ"
+			],
+			[
+				"File",
+				"FileSystem	interface ¡"
+			],
+			[
+				"F",
+				"FileSystem	interface ¡"
+			],
+			[
+				"Prin",
+				"Println	n int, err error ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "logging/logger.go",
+			"settings":
+			{
+				"buffer_size": 243,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "logging/customlogger.go",
+			"settings":
+			{
+				"buffer_size": 854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "logging/frameworklogger.go",
+			"settings":
+			{
+				"buffer_size": 1959,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 230.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 549.0
+	},
+	"console":
+	{
+		"height": 881.0,
+		"history":
+		[
+			"exit",
+			"cls",
+			"clear",
+			"ls",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/utils",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/utils/logging"
+	],
+	"file_history":
+	[
+		"/C/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Sublime Text/Data/Packages/AdvancedNewFile/AdvancedNewFile.sublime-settings",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/utils/logging/logger.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/utils/interface.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/utils/utils.sublime-project",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/hashicorp/logutils/level.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/x-cray/logrus-prefixed-formatter/formatter.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/Sirupsen/logrus/exported.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/cmd/trace.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/cmd/root.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/cmd/status.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/Sirupsen/logrus/entry.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/Sirupsen/logrus/README.md",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/Sirupsen/logrus/hooks.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/Sirupsen/logrus/doc.go",
+		"/C/Sublime Text/Data/Packages/User/Context.sublime-menu",
+		"/C/Sublime Text/Data/Packages/AlignTab/AlignTab.sublime-settings",
+		"/C/Sublime Text/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Sublime Text/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/assets_generate.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/utils/env.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/main.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/shurcooL/vfsgen/options.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/ata.sublime-project",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/assets_vfsdata.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/scripts/status.sh",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/Sirupsen/logrus/logger.go",
+		"/C/Sublime Text/Data/Packages/Godef/messages/install.txt",
+		"/C/Sublime Text/Data/Packages/TodoReview/Default.sublime-keymap",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/logging/logger.go",
+		"/C/Sublime Text/Data/Packages/TodoReview/TodoReview.sublime-settings",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/subosito/gotenv/gotenv.go",
+		"/C/Sublime Text/Data/Packages/Godef/Default (Windows).sublime-mousemap",
+		"/C/Sublime Text/Data/Packages/Godef/Default (Windows).sublime-keymap",
+		"/C/Sublime Text/Data/Packages/User/Godef.sublime-settings",
+		"/C/Sublime Text/Data/Packages/User/GoSublime.sublime-settings",
+		"/C/Sublime Text/Data/Packages/Godef/Godef.sublime-settings",
+		"/C/Sublime Text/Data/Packages/GoSublime/GoSublime.sublime-settings",
+		"/C/Sublime Text/Data/Packages/GoOracle/Default.sublime-settings",
+		"/C/Sublime Text/Data/Packages/GoOracle/User.sublime-settings",
+		"/C/Sublime Text/Data/Packages/User/GitGutter.sublime-settings",
+		"/C/Sublime Text/Data/Packages/GitGutter/GitGutter.sublime-settings",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/tahitianstud/ata/README.md",
+		"/C/Sublime Text/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Sublime Text/Data/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/team42/ata/cmd/status.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/team42/ata/common/log.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/spf13/cobra/command.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/team42/ata/cmd/root.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/team42/ata/main.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/team42/ata/common/common.go",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/codegangsta/cli/flag.go",
+		"/C/Sublime Text/Data/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/spf13/cobra/cobra.go",
+		"/C/Sublime Text/Data/Packages/GoSublime/Default (Windows).sublime-keymap",
+		"/C/Users/01846/DEV/goworkspace/src/github.com/spf13/cobra/cobra/cmd/root.go",
+		"/C/Sublime Text/Data/Packages/GoSublime/CHANGELOG.md"
+	],
+	"find":
+	{
+		"height": 89.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"InitLogger",
+			"rename",
+			"crtl+r",
+			"asset",
+			"gutter",
+			"error",
+			"region",
+			"lint",
+			"control",
+			"Flag(",
+			"f3",
+			"()\n",
+			"defini",
+			"proxy"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"initLogger"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "logging/logger.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								243
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "logging/customlogger.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								80
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "logging/frameworklogger.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 41.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o://C:\\Users\\01846\\DEV\\goworkspace\\src\\github.com\\tahitianstud\\ata":
+	{
+		"height": 469.0
+	},
+	"output.9o://C:\\Users\\01846\\DEV\\goworkspace\\src\\github.com\\tahitianstud\\ata\\cmd":
+	{
+		"height": 500.0
+	},
+	"output.9o://C:\\Users\\01846\\DEV\\goworkspace\\src\\github.com\\tahitianstud\\ata\\logging":
+	{
+		"height": 434.0
+	},
+	"output.9o://C:\\Users\\01846\\DEV\\goworkspace\\src\\github.com\\tahitianstud\\ata\\utils":
+	{
+		"height": 365.0
+	},
+	"output.9o://C:\\Users\\01846\\DEV\\goworkspace\\src\\github.com\\tahitianstud\\utils\\logging":
+	{
+		"height": 338.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 605.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "utils.sublime-project",
+	"replace":
+	{
+		"height": 146.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"logg",
+				"utils\\logging\\logger.go"
+			],
+			[
+				"trace",
+				"ata\\cmd\\trace.go"
+			],
+			[
+				"logging.go",
+				"utils\\logging\\logger.go"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\01846\\DEV\\goworkspace\\src\\github.com\\tahitianstud\\ata\\ata.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 314.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
