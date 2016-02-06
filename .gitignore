@@ -22,4 +22,5 @@ _testmain.go
 *.exe
 *.test
 *.prof
-utils.sublime-*
+utils.sublime-workspace
+utils.sublime-project
