@@ -1,10 +1,11 @@
-package logging
+package framework
 
 import (
 	"fmt"
 	"os"
 
-	log "github.com/Sirupsen/logrus"
+	"github.com/Sirupsen/logrus"
+	"github.com/tahitianstud/utils/logging"
 	prefixed "github.com/x-cray/logrus-prefixed-formatter"
 )
 
@@ -13,13 +14,13 @@ type frameworkLogger struct {
 	verboseMode bool
 }
 
-// FrameworkLogger is a factory method for interface Logger
-func FrameworkLogger() Logger {
+// Logger is a factory method for interface Logger
+func Logger() logging.Logger {
 	return &frameworkLogger{verboseMode: false}
 }
 
 func init() {
-	New = FrameworkLogger
+	logging.New = Logger
 }
 
 var needsInit = true
@@ -28,26 +29,26 @@ func initLogger() {
 	if needsInit {
 		fmt.Println("Needs init")
 
-		log.SetOutput(os.Stdout)
+		logrus.SetOutput(os.Stdout)
 		formatter := &prefixed.TextFormatter{ForceColors: true, TimestampFormat: "15:04:05.000"}
 
-		log.SetFormatter(formatter)
-		log.SetLevel(log.InfoLevel)
+		logrus.SetFormatter(formatter)
+		logrus.SetLevel(logrus.InfoLevel)
 
 		needsInit = false
 	}
 }
 
 // SetLevel sets the desired level
-func (f frameworkLogger) SetLevel(level LogLevel) {
+func (f frameworkLogger) SetLevel(level logging.LogLevel) {
 	initLogger()
-	logLevel := LogLevel.String(level)
-	parsedLevel, err := log.ParseLevel(logLevel)
+	logLevel := logging.LogLevel.String(level)
+	parsedLevel, err := logrus.ParseLevel(logLevel)
 
 	if err == nil {
-		log.SetLevel(parsedLevel)
+		logrus.SetLevel(parsedLevel)
 	} else {
-		log.SetLevel(log.ErrorLevel)
+		logrus.SetLevel(logrus.ErrorLevel)
 		fmt.Println("Got an error: '" + err.Error() + "', setting log level to ERROR")
 	}
 }
@@ -58,8 +59,8 @@ func (f frameworkLogger) ActivateVerboseOutput(verboseFlag bool) {
 	initLogger()
 
 	if verboseFlag == false {
-		formatter := &log.TextFormatter{DisableTimestamp: true}
-		log.SetFormatter(formatter)
+		formatter := &logrus.TextFormatter{DisableTimestamp: true}
+		logrus.SetFormatter(formatter)
 	}
 }
 
@@ -67,36 +68,36 @@ func (f frameworkLogger) ActivateVerboseOutput(verboseFlag bool) {
 func (f frameworkLogger) Trace(message string) {
 	initLogger()
 	if f.verboseMode {
-		log.Debug(message)
+		logrus.Debug(message)
 	}
 }
 
 // Debug prints out a Debug level message
 func (f frameworkLogger) Debug(message string) {
 	initLogger()
-	log.Debug(message)
+	logrus.Debug(message)
 }
 
 // Info prints out a Info level message
 func (f frameworkLogger) Info(message string) {
 	initLogger()
-	log.Info(message)
+	logrus.Info(message)
 }
 
 // Warn prints out a Info level message but only when in Verbose mode
 func (f frameworkLogger) Warn(message string) {
 	initLogger()
-	log.Warn(message)
+	logrus.Warn(message)
 }
 
 // Die will exit after printing system error
 func (f frameworkLogger) Error(message string) {
 	initLogger()
-	log.Error(message)
+	logrus.Error(message)
 }
 
 // Fatal exits after printing out critical error
 func (f frameworkLogger) Fatal(message string) {
 	initLogger()
-	log.Fatal(message)
+	logrus.Fatal(message)
 }

@@ -22,4 +22,4 @@ _testmain.go
 *.exe
 *.test
 *.prof
-utils.sublime-project
+utils.sublime-*
