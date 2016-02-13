@@ -16,6 +16,7 @@ type Logger interface {
 // LogLevel is a type used for expressing the log level
 type LogLevel uint8
 
+// loggerFactory is a factory method type
 type loggerFactory func() Logger
 
 // New permits the instantiation of a new Logger
@@ -36,6 +37,7 @@ const (
 	FatalLevel
 )
 
+// String allows for conversion between string and integer representation of a level
 func (l LogLevel) String() string {
 	var outputLevel = ""
 	switch l {

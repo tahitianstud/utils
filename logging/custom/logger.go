@@ -7,7 +7,7 @@ import (
 
 	"github.com/hashicorp/logutils"
 	"github.com/tahitianstud/utils/logging"
-	"github.com/tahitianstud/utils/logging/terminal"
+	"github.com/tahitianstud/utils/terminal"
 )
 
 // package variables
