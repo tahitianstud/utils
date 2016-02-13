@@ -2,12 +2,12 @@ package logging
 
 // Logger is an interface for different Logging implementations
 type Logger interface {
-	Trace(message string)
-	Debug(message string)
-	Info(message string)
-	Warn(message string)
-	Error(message string)
-	Fatal(message string)
+	Trace(message string, a ...interface{})
+	Debug(message string, a ...interface{})
+	Info(message string, a ...interface{})
+	Warn(message string, a ...interface{})
+	Error(message string, a ...interface{})
+	Fatal(message string, a ...interface{})
 
 	SetLevel(level LogLevel)
 	ActivateVerboseOutput(verboseFlag bool)

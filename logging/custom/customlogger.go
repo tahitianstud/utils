@@ -1,7 +1,6 @@
 package custom
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"strings"
@@ -32,7 +31,6 @@ func init() {
 
 func initLogger() {
 	if needsInit {
-		fmt.Println("Initializing the logger")
 		filter := &logutils.LevelFilter{
 			Levels:   []logutils.LogLevel(logLevels),
 			MinLevel: logutils.LogLevel("WARN"),
@@ -40,8 +38,6 @@ func initLogger() {
 		}
 		log.SetOutput(filter)
 		log.SetFlags(0)
-
-		fmt.Printf("filter is: %v\n", filter)
 
 		needsInit = false
 	}
@@ -52,7 +48,6 @@ func (c customLogger) SetLevel(level logging.LogLevel) {
 	initLogger()
 
 	logLevel := strings.Trim(strings.ToUpper(logging.LogLevel.String(level)), "")
-	fmt.Printf("setting level to : #%s#\n", logLevel)
 
 	filter := &logutils.LevelFilter{
 		Levels:   []logutils.LogLevel(logLevels),
